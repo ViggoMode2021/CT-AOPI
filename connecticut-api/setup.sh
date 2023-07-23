@@ -58,4 +58,4 @@ cd .. # Cd into previous directory
 
 tmux new -s connecticut-api # Create new tmux session
 
-python3 manage.py runserver 0.0.0.0:8000 # Run Django app
+python3 manage.py runserver 0.0.0.0:80 # Run Django app
