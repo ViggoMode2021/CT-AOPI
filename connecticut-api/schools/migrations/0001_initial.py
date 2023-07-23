@@ -15,7 +15,12 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('school', models.CharField(max_length=30)),
-                ('turkish_school', models.CharField(max_length=50)),
+                ('town', models.CharField(max_length=50)),
+                ('county', models.CharField(max_length=30)),
+                ('superintendent', models.CharField(max_length=50)),
+                ('superintendent_email', models.CharField(max_length=30)),
+                ('technology_coordinator', models.CharField(max_length=50)),
+                ('technology_coordinator_email', models.CharField(max_length=30))
             ],
         ),
     ]
