@@ -3,10 +3,15 @@ import csv
 
 class School(models.Model):
     school = models.CharField(max_length=30)
-    turkish_school = models.CharField(max_length=50)
+    town = models.CharField(max_length=50)
+    county = models.CharField(max_length=30)
+    superintendent = models.CharField(max_length=50)
+    superintendent_email = models.CharField(max_length=30)
+    technology_coordinator = models.CharField(max_length=50)
+    technology_coordinator_email = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.school + ' ' + self.turkish_school
+        return self.school + ' ' + self.town + ' ' + self.county + ' ' + self.superintendent + ' ' + self.superintendent_email + ' ' + self.technology_coordinator + ' ' + self.technology_coordinator_email
 
 class all_schools(models.Model):
     def get_all_schools(self):
