@@ -13,7 +13,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='all_schools',
             fields=[
-                ('school', models.CharField(auto_created=True, primary_key=True, serialize=False, verbose_name='school')),
+                ('school', models.CharField(auto_created=False, primary_key=True, serialize=False, verbose_name='school')),
             ],
         ),
     ]
